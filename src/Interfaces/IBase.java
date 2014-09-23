@@ -1,8 +1,8 @@
 package Interfaces;
 
-public interface IBase {
+public interface IBase<T, I> {
 	public void fechar() throws Exception;
-	public void inserir(Object objeto) throws Exception;
-	public void alterar(Object objeto)throws Exception;
-	public void remover(Object objeto)throws Exception;
+	public void inserir(T objeto) throws Exception;
+	public void alterar(T objeto)throws Exception;
+	public void remover(Class<T> classe, I pk)throws Exception;
 }
