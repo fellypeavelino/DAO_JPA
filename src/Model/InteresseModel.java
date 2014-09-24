@@ -1,18 +1,17 @@
 package Model;
 
 import Entity.Pessoa;
-import Interfaces.IPessoaModel;
+import Interfaces.IInteresseModel;
 
-public class PessoaModel extends Base<Pessoa, Integer> implements IPessoaModel{
+public class InteresseModel extends Base<Pessoa, Integer> implements IInteresseModel{
 
-	public PessoaModel() {
+	public InteresseModel() {
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void inserir(Object objeto) throws Exception {
 		// TODO Auto-generated method stub
-	
 		
 	}
 

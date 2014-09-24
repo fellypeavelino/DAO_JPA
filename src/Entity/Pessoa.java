@@ -4,6 +4,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -32,9 +33,11 @@ public class Pessoa {
 	//@JoinColumn(name="pessoa_estadoCivil")
 	@ManyToOne
 	private EstadoCivil estadoCivil = new EstadoCivil();
+	@ElementCollection
 	private String[] pessoa_telefone = new String[5];
 	@Column(name="pessoa_ramal")
 	private int ramal;
+	@ElementCollection
 	private String[] pessoa_redeSociais = new String[4];
 	//@JoinColumn(name="pessoa_endereco")
 	@OneToOne
